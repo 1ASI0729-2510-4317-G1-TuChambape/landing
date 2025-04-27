@@ -63,240 +63,319 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
-  </head>
-  <body>
-"module" src="./src/index.js"></script>
-
     <!-- CSS -->
     <link rel="stylesheet" href="./src/styles/styles.css" />
   </head>
   <body>
- <!-- Skip to main content link for keyboard users -->
- <a
- href="#main-content"
- class="skip-link"
- data-i18n="accessibility.skipToContent"
- >Skip to main content</a>
+    <!-- Skip to main content link for keyboard users -->
+    <a
+      href="#main-content"
+      class="skip-link"
+      data-i18n="accessibility.skipToContent"
+      >Skip to main content</a
+    >
 
-<!-- Header with banner landmark -->
-<header class="header" role="banner" aria-label="Site header">
- <nav class="container header__container">
-   <!-- Logo section -->
-   <div class="header__logo" role="region" aria-label="Site logo">
-     <a href="/" class="logo" aria-label="tuchamba.pe home">
-       <span class="logo__text logo__text--blue">tu</span>
-       <span class="logo__text logo__text--orange">chamba</span>
-       <span class="logo__text logo__text--blue">.pe</span>
-     </a>
-   </div>
+    <!-- Header with banner landmark -->
+    <header class="header" role="banner" aria-label="Site header">
+      <nav class="container header__container">
+        <!-- Logo section -->
+        <div class="header__logo" role="region" aria-label="Site logo">
+          <a href="/" class="logo" aria-label="tuchamba.pe home">
+            <span class="logo__text logo__text--blue">tu</span>
+            <span class="logo__text logo__text--orange">chamba</span>
+            <span class="logo__text logo__text--blue">.pe</span>
+          </a>
+        </div>
 
-   <!-- Desktop Navigation with navigation landmark -->
-   <nav
-     class="nav nav--desktop"
-     role="navigation"
-     aria-label="Main desktop navigation"
-   >
-     <ul class="nav__list">
-       <li class="nav__item">
-         <a href="#benefits" class="nav__link" data-i18n="nav.benefits"
-           >Benefits</a
-         >
-       </li>
-       <li class="nav__item">
-         <a
-           href="#how-it-works"
-           class="nav__link"
-           data-i18n="nav.howItWorks"
-           >How it Works</a
-         >
-       </li>
-       <li class="nav__item">
-         <a href="#services" class="nav__link" data-i18n="nav.services"
-           >Services</a
-         >
-       </li>
-       <li class="nav__item">
-         <a href="#pricing" class="nav__link" data-i18n="nav.pricing"
-           >Pricing</a
-         >
-       </li>
-       <li class="nav__item">
-         <a href="#contact" class="nav__link" data-i18n="nav.contact"
-           >Contact</a
-         >
-       </li>
-     </ul>
-   </nav>
+        <!-- Desktop Navigation with navigation landmark -->
+        <nav
+          class="nav nav--desktop"
+          role="navigation"
+          aria-label="Main desktop navigation"
+        >
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#benefits" class="nav__link" data-i18n="nav.benefits"
+                >Benefits</a
+              >
+            </li>
+            <li class="nav__item">
+              <a
+                href="#how-it-works"
+                class="nav__link"
+                data-i18n="nav.howItWorks"
+                >How it Works</a
+              >
+            </li>
+            <li class="nav__item">
+              <a href="#services" class="nav__link" data-i18n="nav.services"
+                >Services</a
+              >
+            </li>
+            <li class="nav__item">
+              <a href="#pricing" class="nav__link" data-i18n="nav.pricing"
+                >Pricing</a
+              >
+            </li>
+            <li class="nav__item">
+              <a href="#contact" class="nav__link" data-i18n="nav.contact"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </nav>
 
-   <!-- Actions section -->
-   <div class="header__actions" role="region" aria-label="User actions">
-     <a
-       href="#login"
-       class="button button--outline button--desktop"
-       data-i18n="buttons.login"
-       >Log In</a
-     >
-     <a
-       href="#signup"
-       class="button button--primary button--desktop"
-       data-i18n="buttons.signup"
-       >Sign Up</a
-     >
+        <!-- Actions section -->
+        <div class="header__actions" role="region" aria-label="User actions">
+          <a
+            href="#login"
+            class="button button--outline button--desktop"
+            data-i18n="buttons.login"
+            >Log In</a
+          >
+          <a
+            href="#signup"
+            class="button button--primary button--desktop"
+            data-i18n="buttons.signup"
+            >Sign Up</a
+          >
 
-     <!-- Language Selector -->
-     <div class="language-selector">
-       <button
-         id="language-toggle"
-         class="button--icon"
-         aria-label="Change language"
-         aria-haspopup="true"
-         aria-expanded="false"
-       >
-         <svg
-           class="icon"
-           xmlns="http://www.w3.org/2000/svg"
-           width="24"
-           height="24"
-           viewBox="0 0 24 24"
-           fill="none"
-           stroke="currentColor"
-           stroke-width="2"
-           stroke-linecap="round"
-           stroke-linejoin="round"
-           aria-hidden="true"
-         >
-           <circle cx="12" cy="12" r="10"></circle>
-           <line x1="2" y1="12" x2="22" y2="12"></line>
-           <path
-             d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"
-           ></path>
-         </svg>
-         <span class="current-language">EN</span>
-       </button>
+          <!-- Language Selector -->
+          <div class="language-selector">
+            <button
+              id="language-toggle"
+              class="button--icon"
+              aria-label="Change language"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              <svg
+                class="icon"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="2" y1="12" x2="22" y2="12"></line>
+                <path
+                  d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"
+                ></path>
+              </svg>
+              <span class="current-language">EN</span>
+            </button>
 
-       <div
-         class="language-dropdown"
-         id="language-dropdown"
-         aria-hidden="true"
-         role="menu"
-       >
-         <button class="language-option" data-lang="en" role="menuitem">
-           English
-         </button>
-         <button class="language-option" data-lang="es" role="menuitem">
-           Español
-         </button>
-       </div>
-     </div>
-     <!-- Botón de menú hamburguesa (visible solo en móviles) -->
-     <button
-       id="menu-toggle"
-       class="button--icon"
-       aria-label="Toggle mobile menu"
-       aria-expanded="false"
-       aria-controls="mobile-menu"
-     >
-       <svg
-         class="icon"
-         id="menu-icon"
-         xmlns="http://www.w3.org/2000/svg"
-         width="24"
-         height="24"
-         viewBox="0 0 24 24"
-         fill="none"
-         stroke="currentColor"
-         stroke-width="2"
-         stroke-linecap="round"
-         stroke-linejoin="round"
-         aria-hidden="true"
-       >
-         <line x1="3" y1="12" x2="21" y2="12"></line>
-         <line x1="3" y1="6" x2="21" y2="6"></line>
-         <line x1="3" y1="18" x2="21" y2="18"></line>
-       </svg>
-       <svg
-         class="icon icon--hidden"
-         id="close-icon"
-         xmlns="http://www.w3.org/2000/svg"
-         width="24"
-         height="24"
-         viewBox="0 0 24 24"
-         fill="none"
-         stroke="currentColor"
-         stroke-width="2"
-         stroke-linecap="round"
-         stroke-linejoin="round"
-         aria-hidden="true"
-       >
-         <line x1="18" y1="6" x2="6" y2="18"></line>
-         <line x1="6" y1="6" x2="18" y2="18"></line>
-       </svg>
-     </button>
-   </div>
- </nav>
+            <div
+              class="language-dropdown"
+              id="language-dropdown"
+              aria-hidden="true"
+              role="menu"
+            >
+              <button class="language-option" data-lang="en" role="menuitem">
+                English
+              </button>
+              <button class="language-option" data-lang="es" role="menuitem">
+                Español
+              </button>
+            </div>
+          </div>
+          <!-- Botón de menú hamburguesa (visible solo en móviles) -->
+          <button
+            id="menu-toggle"
+            class="button--icon"
+            aria-label="Toggle mobile menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg
+              class="icon"
+              id="menu-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+            <svg
+              class="icon icon--hidden"
+              id="close-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <line x1="18" y1="6" x2="6" y2="18"></line>
+              <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+      </nav>
 
- <!-- Mobile Navigation with dialog landmark -->
- <div
-   class="nav nav--mobile"
-   id="mobile-menu"
-   aria-hidden="true"
-   aria-labelledby="menu-toggle"
-   role="dialog"
-   aria-modal="true"
-   aria-label="Mobile menu"
- >
-   <div class="container">
-     <nav role="navigation" aria-label="Main mobile navigation">
-       <ul class="nav__list nav__list--mobile">
-         <li class="nav__item">
-           <a href="#benefits" class="nav__link" data-i18n="nav.benefits"
-             >Benefits</a
-           >
-         </li>
-         <li class="nav__item">
-           <a
-             href="#how-it-works"
-             class="nav__link"
-             data-i18n="nav.howItWorks"
-             >How it Works</a
-           >
-         </li>
-         <li class="nav__item">
-           <a href="#services" class="nav__link" data-i18n="nav.services"
-             >Services</a
-           >
-         </li>
-         <li class="nav__item">
-           <a href="#pricing" class="nav__link" data-i18n="nav.pricing"
-             >Pricing</a
-           >
-         </li>
-         <li class="nav__item">
-           <a href="#contact" class="nav__link" data-i18n="nav.contact"
-             >Contact</a
-           >
-         </li>
-       </ul>
-     </nav>
-     <div
-       class="nav__actions"
-       role="region"
-       aria-label="Mobile user actions"
-     >
-       <a
-         href="#login"
-         class="button button--outline button--full"
-         data-i18n="buttons.login"
-         >Log In</a
-       >
-       <a
-         href="#signup"
-         class="button button--primary button--full"
-         data-i18n="buttons.signup"
-         >Sign Up</a>
-     </div>
-   </div>
- </div>
-</header>
+      <!-- Mobile Navigation with dialog landmark -->
+      <div
+        class="nav nav--mobile"
+        id="mobile-menu"
+        aria-hidden="true"
+        aria-labelledby="menu-toggle"
+        role="dialog"
+        aria-modal="true"
+        aria-label="Mobile menu"
+      >
+        <div class="container">
+          <nav role="navigation" aria-label="Main mobile navigation">
+            <ul class="nav__list nav__list--mobile">
+              <li class="nav__item">
+                <a href="#benefits" class="nav__link" data-i18n="nav.benefits"
+                  >Benefits</a
+                >
+              </li>
+              <li class="nav__item">
+                <a
+                  href="#how-it-works"
+                  class="nav__link"
+                  data-i18n="nav.howItWorks"
+                  >How it Works</a
+                >
+              </li>
+              <li class="nav__item">
+                <a href="#services" class="nav__link" data-i18n="nav.services"
+                  >Services</a
+                >
+              </li>
+              <li class="nav__item">
+                <a href="#pricing" class="nav__link" data-i18n="nav.pricing"
+                  >Pricing</a
+                >
+              </li>
+              <li class="nav__item">
+                <a href="#contact" class="nav__link" data-i18n="nav.contact"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </nav>
+          <div
+            class="nav__actions"
+            role="region"
+            aria-label="Mobile user actions"
+          >
+            <a
+              href="#login"
+              class="button button--outline button--full"
+              data-i18n="buttons.login"
+              >Log In</a
+            >
+            <a
+              href="#signup"
+              class="button button--primary button--full"
+              data-i18n="buttons.signup"
+              >Sign Up</a
+            >
+          </div>
+        </div>
+      </div>
+    </header>
 
-<script type="module" src="./src/index.js"></script>
+    <main id="main-content" class="main" role="main" aria-label="Main content">
+      <!-- Hero Section with region landmark -->
+      <section class="hero" role="region" aria-labelledby="hero-title">
+        <div class="container hero__container">
+          <div class="hero__content">
+            <h1 class="hero__title" id="hero-title">
+              <span data-i18n="hero.title.part1">Find the best</span>
+              <span class="hero__highlight" data-i18n="hero.title.highlight"
+                >professionals</span
+              >
+              <span data-i18n="hero.title.part2">for your needs</span>
+            </h1>
+            <p class="hero__description" data-i18n="hero.description">
+              Connect with qualified professionals in various fields. Get
+              quotes, compare profiles, and hire the best talent for your
+              projects.
+            </p>
+            <div class="hero__actions">
+              <a
+                href="#signup"
+                class="button button--primary"
+                data-i18n="hero.buttons.getStarted"
+                >Get Started</a
+              >
+              <a
+                href="#how-it-works"
+                class="button button--outline"
+                data-i18n="hero.buttons.learnMore"
+                >Learn More</a
+              >
+            </div>
+            <div class="hero__users">
+              <div class="hero__avatars">
+                <div class="hero__avatar">JD</div>
+                <div class="hero__avatar">MR</div>
+                <div class="hero__avatar">TS</div>
+                <div class="hero__avatar">+</div>
+              </div>
+              <p class="hero__users-text" data-i18n="hero.usersCount">
+                Join over 10,000 satisfied users
+              </p>
+            </div>
+          </div>
+          <div class="hero__image-container">
+            <img
+              src="src/assets/img_hero.jpg"
+              alt="Professional connecting with clients"
+              class="hero__image"
+              data-i18n-alt="hero.image.alt"
+            />
+            <div class="hero__rating">
+              <svg
+                class="hero__rating-icon"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <polygon
+                  points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                ></polygon>
+              </svg>
+              <div>
+                <p class="hero__rating-label" data-i18n="hero.rating.label">
+                  Average Rating
+                </p>
+                <p class="hero__rating-value">4.8/5</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script type="module" src="./src/index.js"></script>
+  </body>
+</html>
