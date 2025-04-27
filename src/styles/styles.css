@@ -1314,4 +1314,58 @@
   transform: translateX(-50%);
   z-index: 9999;
 }
-  
+
+  /* ========================================
+     Benefits Section
+     ======================================== */
+     .benefits {
+      padding: var(--spacing-16) 0;
+      background-color: var(--color-background-alt);
+    }
+    
+    .benefits__grid {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      gap: var(--spacing-6);
+      margin-bottom: var(--spacing-8);
+    }
+    
+    .benefit-card {
+      background-color: var(--color-background);
+      border-radius: var(--border-radius-lg);
+      padding: var(--spacing-6);
+      box-shadow: var(--shadow);
+      transition: transform var(--transition-normal) var(--transition-timing), box-shadow var(--transition-normal) var(--transition-timing);
+    }
+    
+    .benefit-card:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-lg);
+    }
+    
+    .benefit-card__icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 3rem;
+      height: 3rem;
+      background-color: var(--color-background-alt);
+      color: var(--color-primary);
+      border-radius: var(--border-radius);
+      margin-bottom: var(--spacing-4);
+    }
+    
+    .benefit-card__title {
+      font-size: var(--font-size-xl);
+      margin-bottom: var(--spacing-2);
+    }
+    
+    .benefit-card__description {
+      color: var(--color-text-light);
+      margin: 0;
+    }
+    
+    .benefits__action {
+      text-align: center;
+    }
+    
