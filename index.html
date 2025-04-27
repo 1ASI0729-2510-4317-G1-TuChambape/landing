@@ -65,5 +65,238 @@
     />
   </head>
   <body>
-  </body>
-</html>
+"module" src="./src/index.js"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./src/styles/styles.css" />
+  </head>
+  <body>
+ <!-- Skip to main content link for keyboard users -->
+ <a
+ href="#main-content"
+ class="skip-link"
+ data-i18n="accessibility.skipToContent"
+ >Skip to main content</a>
+
+<!-- Header with banner landmark -->
+<header class="header" role="banner" aria-label="Site header">
+ <nav class="container header__container">
+   <!-- Logo section -->
+   <div class="header__logo" role="region" aria-label="Site logo">
+     <a href="/" class="logo" aria-label="tuchamba.pe home">
+       <span class="logo__text logo__text--blue">tu</span>
+       <span class="logo__text logo__text--orange">chamba</span>
+       <span class="logo__text logo__text--blue">.pe</span>
+     </a>
+   </div>
+
+   <!-- Desktop Navigation with navigation landmark -->
+   <nav
+     class="nav nav--desktop"
+     role="navigation"
+     aria-label="Main desktop navigation"
+   >
+     <ul class="nav__list">
+       <li class="nav__item">
+         <a href="#benefits" class="nav__link" data-i18n="nav.benefits"
+           >Benefits</a
+         >
+       </li>
+       <li class="nav__item">
+         <a
+           href="#how-it-works"
+           class="nav__link"
+           data-i18n="nav.howItWorks"
+           >How it Works</a
+         >
+       </li>
+       <li class="nav__item">
+         <a href="#services" class="nav__link" data-i18n="nav.services"
+           >Services</a
+         >
+       </li>
+       <li class="nav__item">
+         <a href="#pricing" class="nav__link" data-i18n="nav.pricing"
+           >Pricing</a
+         >
+       </li>
+       <li class="nav__item">
+         <a href="#contact" class="nav__link" data-i18n="nav.contact"
+           >Contact</a
+         >
+       </li>
+     </ul>
+   </nav>
+
+   <!-- Actions section -->
+   <div class="header__actions" role="region" aria-label="User actions">
+     <a
+       href="#login"
+       class="button button--outline button--desktop"
+       data-i18n="buttons.login"
+       >Log In</a
+     >
+     <a
+       href="#signup"
+       class="button button--primary button--desktop"
+       data-i18n="buttons.signup"
+       >Sign Up</a
+     >
+
+     <!-- Language Selector -->
+     <div class="language-selector">
+       <button
+         id="language-toggle"
+         class="button--icon"
+         aria-label="Change language"
+         aria-haspopup="true"
+         aria-expanded="false"
+       >
+         <svg
+           class="icon"
+           xmlns="http://www.w3.org/2000/svg"
+           width="24"
+           height="24"
+           viewBox="0 0 24 24"
+           fill="none"
+           stroke="currentColor"
+           stroke-width="2"
+           stroke-linecap="round"
+           stroke-linejoin="round"
+           aria-hidden="true"
+         >
+           <circle cx="12" cy="12" r="10"></circle>
+           <line x1="2" y1="12" x2="22" y2="12"></line>
+           <path
+             d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"
+           ></path>
+         </svg>
+         <span class="current-language">EN</span>
+       </button>
+
+       <div
+         class="language-dropdown"
+         id="language-dropdown"
+         aria-hidden="true"
+         role="menu"
+       >
+         <button class="language-option" data-lang="en" role="menuitem">
+           English
+         </button>
+         <button class="language-option" data-lang="es" role="menuitem">
+           Español
+         </button>
+       </div>
+     </div>
+     <!-- Botón de menú hamburguesa (visible solo en móviles) -->
+     <button
+       id="menu-toggle"
+       class="button--icon"
+       aria-label="Toggle mobile menu"
+       aria-expanded="false"
+       aria-controls="mobile-menu"
+     >
+       <svg
+         class="icon"
+         id="menu-icon"
+         xmlns="http://www.w3.org/2000/svg"
+         width="24"
+         height="24"
+         viewBox="0 0 24 24"
+         fill="none"
+         stroke="currentColor"
+         stroke-width="2"
+         stroke-linecap="round"
+         stroke-linejoin="round"
+         aria-hidden="true"
+       >
+         <line x1="3" y1="12" x2="21" y2="12"></line>
+         <line x1="3" y1="6" x2="21" y2="6"></line>
+         <line x1="3" y1="18" x2="21" y2="18"></line>
+       </svg>
+       <svg
+         class="icon icon--hidden"
+         id="close-icon"
+         xmlns="http://www.w3.org/2000/svg"
+         width="24"
+         height="24"
+         viewBox="0 0 24 24"
+         fill="none"
+         stroke="currentColor"
+         stroke-width="2"
+         stroke-linecap="round"
+         stroke-linejoin="round"
+         aria-hidden="true"
+       >
+         <line x1="18" y1="6" x2="6" y2="18"></line>
+         <line x1="6" y1="6" x2="18" y2="18"></line>
+       </svg>
+     </button>
+   </div>
+ </nav>
+
+ <!-- Mobile Navigation with dialog landmark -->
+ <div
+   class="nav nav--mobile"
+   id="mobile-menu"
+   aria-hidden="true"
+   aria-labelledby="menu-toggle"
+   role="dialog"
+   aria-modal="true"
+   aria-label="Mobile menu"
+ >
+   <div class="container">
+     <nav role="navigation" aria-label="Main mobile navigation">
+       <ul class="nav__list nav__list--mobile">
+         <li class="nav__item">
+           <a href="#benefits" class="nav__link" data-i18n="nav.benefits"
+             >Benefits</a
+           >
+         </li>
+         <li class="nav__item">
+           <a
+             href="#how-it-works"
+             class="nav__link"
+             data-i18n="nav.howItWorks"
+             >How it Works</a
+           >
+         </li>
+         <li class="nav__item">
+           <a href="#services" class="nav__link" data-i18n="nav.services"
+             >Services</a
+           >
+         </li>
+         <li class="nav__item">
+           <a href="#pricing" class="nav__link" data-i18n="nav.pricing"
+             >Pricing</a
+           >
+         </li>
+         <li class="nav__item">
+           <a href="#contact" class="nav__link" data-i18n="nav.contact"
+             >Contact</a
+           >
+         </li>
+       </ul>
+     </nav>
+     <div
+       class="nav__actions"
+       role="region"
+       aria-label="Mobile user actions"
+     >
+       <a
+         href="#login"
+         class="button button--outline button--full"
+         data-i18n="buttons.login"
+         >Log In</a
+       >
+       <a
+         href="#signup"
+         class="button button--primary button--full"
+         data-i18n="buttons.signup"
+         >Sign Up</a>
+     </div>
+   </div>
+ </div>
+</header>
+
+<script type="module" src="./src/index.js"></script>
