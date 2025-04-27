@@ -2,6 +2,7 @@
 import { accessibility } from "./libs/accesibility.js";
 import i18n from "./libs/i18n.js";
 import { setLanguage } from "./libs/language.js";
+import { imgLoadingLazy } from "./libs/performance.js";
 
 
 // Evento de carga del contenido para realizar la configuración inicial
@@ -404,5 +405,6 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   accessibility();
+  imgLoadingLazy();
 
 });
