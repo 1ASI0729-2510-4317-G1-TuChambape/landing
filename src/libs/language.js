@@ -1,5 +1,5 @@
-import { getNestedTranslation } from "../utils/getNestedTranslation";
-import { updateMetaTags } from "../utils/updateMetaTags";
+import { getNestedTranslation } from "../utils/getNestedTranslation.js";
+import { updateMetaTags } from "../utils/updateMetaTags.js";
 
 
 // Función principal para cambiar el idioma de la página

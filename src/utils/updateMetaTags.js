@@ -1,4 +1,4 @@
-import i18n from "../libs/i18n";
+import i18n from "../libs/i18n.js";
 
 // Función para actualizar las etiquetas meta (título, descripción, keywords, etc.)
 export const updateMetaTags = (lang) => {   
