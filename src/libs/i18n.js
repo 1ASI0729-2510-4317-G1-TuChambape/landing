@@ -224,6 +224,15 @@ const i18n = {
       rating: "Average Rating",
       button: "Join Our Community",
     },
+    videos: {
+      badge: "Videos",
+      title: "Learn More About Us",
+      description: "Discover how our platform works and meet our team.",
+      videoTitles: {
+        about: "About Us",
+        team: "Our Team",
+      },
+    },
     cta: {
       badge: "Get Started",
       title: "Ready to Transform Your Professional Life?",
@@ -509,6 +518,15 @@ const i18n = {
       categories: "Categorías de Servicios",
       rating: "Calificación Promedio",
       button: "Únete a Nuestra Comunidad",
+    },
+    videos: {
+      badge: "Videos",
+      title: "Aprende Más Sobre Nosotros",
+      description: "Descubre cómo funciona nuestra plataforma y conoce nuestro equipo.",
+      videoTitles: {
+        about: "Sobre Nosotros",
+        team: "Nuestro Equipo",
+      },
     },
     cta: {
       badge: "Comienza",
